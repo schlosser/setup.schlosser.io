@@ -1,0 +1,55 @@
+# Comment out lines to remove them from the list of programs to install
+
+# Command Line
+brew
+imagemagick
+openssl
+pandoc
+rename
+tree
+wget
+sl
+ssh
+vim
+zsh
+
+# Programming
+git
+go
+mongodb
+ocaml
+postgresql
+python3
+redis
+sqlite
+
+# Utilities
+bettertouchtool
+diskInventoryX
+flux
+fonts
+licecap
+rdm
+rescuetime
+seil
+
+# Applications
+alfred
+dropbox
+firefox
+googleChrome
+googleDrive
+googlePhotosBackup
+iterm2
+sketch
+slack
+sublimeText
+texshop
+thunderbird
+utorrent
+vlc
+zeplin
+
+# Meta
+notImplemented
+todo
