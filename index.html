@@ -1,0 +1,209 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Setup a new Mac</title>
+    <meta name="description" content="Setup a new Mac" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://schlosser.io/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://schlosser.io/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://schlosser.io/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://schlosser.io/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://schlosser.io/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://schlosser.io/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://schlosser.io/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://schlosser.io/img/favicon/apple-touch-icon-152x152.png" />
+    <!-- Standard Icons -->
+    <link rel="icon" type="image/png" href="https://schlosser.io/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://schlosser.io/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://schlosser.io/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://schlosser.io/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://schlosser.io/img/favicon/favicon-128.png" sizes="128x128" />
+    <!-- Microsoft Metadata -->
+    <meta name="application-name" content="Setup a new Mac"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://schlosser.io/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="https://schlosser.io/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="https://schlosser.io/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="https://schlosser.io/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="https://schlosser.io/img/favicon/mstile-310x310.png" />
+    <!-- Chrome Theme Color -->
+    <meta name="theme-color" content="#FFFFFF">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,700" rel="stylesheet">
+
+    <style type='text/css'>
+        body {
+            font-size: 16px;
+        }
+
+        h1 {
+            color: #444;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h2 {
+            color: #444;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        h3 {
+            color: #444;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 400;
+            text-align: left;
+        }
+
+
+        p, li {
+            color: #777;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        li {
+            font-size: 0.875rem;
+        }
+
+        pre {
+            background-color: #F5F5F5;
+            font-family: 'Inconsolata', monospace;
+            padding: 1rem;
+            overflow: scroll;
+        }
+
+        code {
+            font-family: 'Inconsolata', monospace;
+
+        }
+
+        .content {
+            padding: 0 4rem;
+        }
+
+        a, a:hover, a:visited {
+            color: #444;
+        }
+
+        .centered {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            max-width: 40rem;
+            margin: 4rem auto 4rem;
+            padding: 0 0.5rem;
+            width: 100%;
+        }
+
+        .programs {
+            list-style: none;
+            margin-left: 0;
+            display: flex;
+            padding: 0;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .programs li {
+            /*width: 33%;*/
+            padding-right: 0.25rem;
+
+            margin: 0 0 0.25rem;
+        }
+
+        .programs li:not(:last-child):after {
+            content: ', ';
+        }
+
+        @media screen and (max-width: 640px) {
+            .content {
+                padding: 0;
+            }
+
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .programs li {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <div class="content">
+            <h1>Setup a new Mac</h1>
+            <p>No more installing, or configuring. Automatically install and configure programs to make any Mac feel like home.</p>
+            <h2>Setup</h2>
+            <pre><code>sh -c "$(curl -fsSL https://setup.schlosser.io/setup)"</code></pre>
+            <h2>Save Configurations</h2>
+            <pre><code>sh -c "$(curl -fsSL https://setup.schlosser.io/save)"</code></pre>
+            <h2>Full program list</h2>
+            <h3>Command Line</h3>
+            <ul class="programs">
+                <li>brew</li>
+                <li>imagemagick</li>
+                <li>openssl</li>
+                <li>pandoc</li>
+                <li>rename</li>
+                <li>tree</li>
+                <li>wget</li>
+                <li>sl</li>
+                <li>ssh</li>
+                <li>vim</li>
+                <li>zsh</li>
+            </ul>
+            <h3>Programming</h3>
+            <ul class="programs">
+                <li>git</li>
+                <li>go</li>
+                <li>mongodb</li>
+                <li>ocaml</li>
+                <li>postgresql</li>
+                <li>python3</li>
+                <li>redis</li>
+                <li>sqlite</li>
+            </ul>
+            <h3>Utilities</h3>
+            <ul class="programs">
+                <li>Better Touch Tool</li>
+                <li>Disk Inventory X</li>
+                <li>Flux</li>
+                <li>System Fonts</li>
+                <li>LICEcap</li>
+                <li>RDM</li>
+                <li>RescueTime</li>
+                <li>Seil</li>
+            </ul>
+            <h3>Applications</h3>
+            <ul class="programs">
+                <li>Alfred</li>
+                <li>Dropbox</li>
+                <li>Firefox</li>
+                <li>Google Chrome</li>
+                <li>Google Drive</li>
+                <li>Google Photos Backup</li>
+                <li>iTerm 2</li>
+                <li>Sketch</li>
+                <li>Slack</li>
+                <li>Sublime Text 3</li>
+                <li>TEXshop</li>
+                <li>Thunderbird</li>
+                <li>uTorrent</li>
+                <li>VLC</li>
+                <li>Zeplin</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
