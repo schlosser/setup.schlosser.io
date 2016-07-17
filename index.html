@@ -48,30 +48,29 @@
             color: #444;
             font-family: 'Montserrat', sans-serif;
             font-size: 1rem;
-            font-weight: 400;
+            font-weight: 700;
             text-align: left;
             margin-top: 2rem;
+            margin-bottom: 1rem;
         }
 
         h3 {
             color: #444;
             font-family: 'Montserrat', sans-serif;
             font-size: 0.875rem;
-            font-weight: 400;
+            font-weight: 700;
             text-align: left;
+            margin-bottom: 0.5rem;
         }
 
 
         p, li {
             color: #777;
             font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
             font-weight: 400;
             text-align: left;
-        }
-
-        li {
-            font-size: 0.875rem;
         }
 
         pre {
@@ -83,7 +82,11 @@
 
         code {
             font-family: 'Inconsolata', monospace;
+        }
 
+        img {
+            max-width: 118%;
+            margin: 0 -9%;
         }
 
         .content {
@@ -109,14 +112,13 @@
             display: flex;
             padding: 0;
             flex-wrap: wrap;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
+            margin-top: 0;
         }
 
         .programs li {
             /*width: 33%;*/
             padding-right: 0.25rem;
-
-            margin: 0 0 0.25rem;
         }
 
         .programs li:not(:last-child):after {
@@ -135,6 +137,7 @@
 
             .programs li {
                 width: 50%;
+                padding: 0;
             }
         }
     </style>
@@ -203,6 +206,9 @@
                 <li>VLC</li>
                 <li>Zeplin</li>
             </ul>
+            <h2>Screenshots</h2>
+            <img src="http://static.schlosser.io/ss/dotfiles/terminal.png" alt="My Terminal Setup">
+            <img src="http://static.schlosser.io/ss/dotfiles/vim.png" alt="My Vim Setup">
         </div>
     </div>
 </body>

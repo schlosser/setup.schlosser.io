@@ -71,3 +71,7 @@ Full program list
 -   VLC
 -   Zeplin
 
+Screenshots
+-----------
+![My Terminal Setup](http://static.schlosser.io/ss/dotfiles/terminal.png)
+![My Vim Setup](http://static.schlosser.io/ss/dotfiles/vim.png)
