@@ -125,7 +125,8 @@ function postInstallBtt () {
 
 function postInstallIterm2 () {
     printf "$(BLUE "⚒  POST-INSTALL") iTerm 2...\n"
-    rm -rf $HOME/.iterm2
+    mkdir -p "$TMP/trash"
+    mv "$HOME/.iterm2" "$TMP/trash"
     cp -r "$TMP/.iterm2" $HOME
     printf "$(GREEN "✔  DONE")\n"
 }
@@ -141,7 +142,8 @@ function postInstallAlfred () {
 function postInstallVim () {
     printf "$(BLUE "⚒  POST-INSTALL") Vim...\n"
     cp "$TMP/.vimrc" "$HOME"
-    rm -rf "$HOME/.vim"
+    mkdir -p "$TMP/trash"
+    mv "$HOME/.vim" "$TMP/trash"
     cp -r "$TMP/.vim" "$HOME"
     printf "$(GREEN "✔  DONE")\n"
 }
@@ -351,6 +353,10 @@ function setupall() {
         fi
         setup $line
     done
+
+    printf "$(BLUE "⚒  REMOVING") Temporary folder at $TMP...\n"
+    rm -rf $TMP
+    printf "$(GREEN "✔  DONE")\n"
 }
 
 printf "$(BLUE "⚒  CREATING") Temporary folder at $TMP...\n"

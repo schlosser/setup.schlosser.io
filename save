@@ -25,7 +25,7 @@ function save () {
 function saveCompressed () {
     local from=$1
     printf "$(BLUE "⚒  SAVING COMPRESSED") $(basename "$from")...\n"
-    cd "$from" > /dev/null; zip -qr "$TMP/$(basename "$from").zip" *; cd - > /dev/null
+    cd "$from" > /dev/null; zip -qr "$TMP/$(basename "$from").zip" .; cd - > /dev/null
     printf "$(GREEN "✔  SAVED") $(basename "$from") ➡ "$(basename "$1").zip"\n"
 }
 
@@ -58,7 +58,8 @@ saveCompressed "$HOME/Library/Fonts"
 save "$BTT/bttdata2"
 
 printf "$(BLUE "⚒  UPLOADING PACKAGE...")\n"
-cd "$TMP" > /dev/null; zip -qr "$ZIP" *.*; cd - > /dev/null
+cd "$TMP" > /dev/null; zip -qr "$ZIP" .; cd - > /dev/null
 scp "$ZIP" dan:/srv/setup.schlosser.io/public_html/
 rm "$ZIP"
+rm -r "$TMP"
 

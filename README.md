@@ -14,6 +14,14 @@ Save Configurations
 
     sh -c "$(curl -fsSL https://setup.schlosser.io/save)"
 
+Deploy this Repo
+----------------
+Made changes to this repo itself?  Use this command to upload them.  (Assumes `dan` in SSH config):
+
+```
+scp setup save programs index.html dan:/srv/setup.schlosser.io/public_html/
+```
+
 Full program list
 -----------------
 
